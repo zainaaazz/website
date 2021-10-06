@@ -1,11 +1,18 @@
-/*.pastpaper {
-    list-style: none;
-    color: black ;
-    background-color: black !important;
+canvas {
+  border: 1px solid white;
+}
 
-  }
+.button5 {
+  background-color: #555555;
+  color: white;
+  margin: 10px;
+}
 
-}*/
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 ul {
   margin: 0;
