@@ -1,281 +1,213 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html>
+<title>About Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- 1) change my url -->
-<!-- 2) mobile sizing viewport -->
-<!-- 3) slideshow not working-->
-<!-- 4) Nav bar on "about me" is different size-->
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey ">
+  <a name="Heading"></a>
 
-
-<head>
-    <meta charset ="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>ZH website</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- <script>
-  $(document).ready(function(){
-  $("button").click(function(){
-  $("myDIV").toggle();
-  });
-  });
-  </script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=G-BX7FL7B14T"></script>
- <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-   gtag('config', 'G-BX7FL7B14T');
-</script>
-
-</head>
-
-<body>
-
-<!-- Navigation bar  -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-
-        <button
-               class="navbar-toggler"
-               type="button"
-               data-bs-toggle="collapse"
-               data-bs-target="#navmenu"
-             >
-               <span class="navbar-toggler-icon"></span>
-             </button>
-             <div class="collapse navbar-collapse" id="navmenu">
-            <div>
-               <ul>
-                   <li class= "first-li"><a class="active" href="index.html" style="color: white;" >Home Page</a></li>
-                   <li><a href="AboutMe.html" style="color: white;">About Me</a></li>
-                   <li><a href="Blog.html" style="color: white;">Personal Blog</a></li>
-                   <li><a href="PastPapers.html" style="color: white;">Past Papers</a></li>
-               </ul>
-              </div>
-              </div>
-                <div><span class="navbar-text" align="right" style="margin-right:10px;">
-                Zainaaz Hansa - Vodacom Code Like A Girl 2021
-                </span></div>
-
-              </div></nav>
-
-<br>
-<br>
-
-<!-- Showcase -->
-  <section
-    class="bg-dark text-light p-5 p-lg-0 pt-lg-4 text-center text-sm-start">
-    <div class="container">
-      <div class="d-sm-flex align-items-center justify-content-between">
-        <div>
-          <MainHeading><font face="Strain"><i><u>Zainaaz Hansa</u></i></font></MainHeading></br>
-          <SubHeading>Prospective Computer Science Student</SubHeading>
-            <p class="lead my-4"> Willowmoore High School </br> Matric 2021; Age:17 <br> zainaazhansa@gmail.com</p>
-          <p class="lead my-4">
-I am an open minded liberal who aspires to be a better version of myself each day, pushing boundaries and
-living my best life. I aim to be in an environment and ultimately a job in the Tech-Industry as being highly passionate about the field you go into
-cultivates a feeling of never having to “work” a day in your life.
-I aspire to contribute in a small way to my environment and community all while advancing myself,
-giving back to current generations and uplifting future generations.
-          </p>
-        </div>
-        <img class="img-fluid w-25" src="images/me.jpg"  alt="picture of me" style="vertical-align:middle; margin-bottom:40px; margin-left:25px" />
-      </div>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card w3-large">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">ZAINAAZ HANSA</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">About Me</a>
+      <a href="typing.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Typing & Tutoring</a>
+      <a href="portfolio.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Portfolio</a>
+      <a href="recources.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Resources</a>
     </div>
-  </section>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-  <!-- Contact Me -->
-  <section class="bg-primary text-light p-5">
-    <div class="container">
-      <div class="d-md-flex justify-content-between align-items-center">
-        <h3 class="mb-3 mb-md-0">Contact Me</h3>
-
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Type a message for developer" />
-          <button class="btn btn-dark btn-lg" type="button">Submit</button>
-
+    
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+    </a>
+  </div>
 </div>
-      </div>
-    </div>
-  </section>
 
-  <div class="center">
-  <button class="button5">Play a game while you're here? (show/hide)</button>
+<!-- Sidebar on small screens when clicking the menu icon -->
 
+
+  <div id="mySideBar" class=" w3-animate-right w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <br>
+    <br>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">About Me</a>
+  <a href="typing.html" onclick="w3_close()" class="w3-bar-item w3-button">Typing & Tutoring</a>
+  <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">Portfolio</a>
+  <a href="recources.html" onclick="w3_close()" class="w3-bar-item w3-button">Resources</a>
   </div>
 
 
-<myDIV style="display:none">
-  <p align ="center">Code used from <a href="https://www.codegrepper.com/code-examples/html/mini+game+html"  target="_blank">https://www.codegrepper.com/code-examples/html/mini+game+html</a>
-    <br> <b>NOTE: This game only works when viewed from a Desktop!</b>
-    <br>Please use the arrows on your keyboard to control the snake :)</p>
-  <section
-  class="bg-dark text-light p-5 p-lg-0 pt-lg-4 text-sm-start center">
+<!-- Page Container -->
+<div class= "w3-content w3-margin-top" style="max-width:1400px;     margin-top: 100px;">
+<br>
+<br>
 
-  <canvas width="400" height="400" id="game"></canvas>
-  <script>
-  var canvas = document.getElementById('game');
-  var context = canvas.getContext('2d');
+  <!-- The Grid -->
+  <div class="w3-row-padding">
   
-  var grid = 16;
-  var count = 0;
+    <!-- Left Column -->
+    <div class="w3-third">
     
-  var snake = {
-    x: 160,
-    y: 160,
-    
-    // snake velocity. moves one grid length every frame in either the x or y direction
-    dx: grid,
-    dy: 0,
-    
-    // keep track of all grids the snake body occupies
-    cells: [],
-    
-    // length of the snake. grows when eating an apple
-    maxCells: 4
-  };
-  var apple = {
-    x: 320,
-    y: 320
-  };
-  
-  // get random whole numbers in a specific range
-  // @see https://stackoverflow.com/a/1527820/2124254
-  function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
-  }
-  
-  // game loop
-  function loop() {
-    requestAnimationFrame(loop);
-  
-    // slow game loop to 15 fps instead of 60 (60/15 = 4)
-    if (++count < 4) {
-      return;
-    }
-  
-    count = 0;
-    context.clearRect(0,0,canvas.width,canvas.height);
-  
-    // move snake by it's velocity
-    snake.x += snake.dx;
-    snake.y += snake.dy;
-  
-    // wrap snake position horizontally on edge of screen
-    if (snake.x < 0) {
-      snake.x = canvas.width - grid;
-    }
-    else if (snake.x >= canvas.width) {
-      snake.x = 0;
-    }
-    
-    // wrap snake position vertically on edge of screen
-    if (snake.y < 0) {
-      snake.y = canvas.height - grid;
-    }
-    else if (snake.y >= canvas.height) {
-      snake.y = 0;
-    }
-  
-    // keep track of where snake has been. front of the array is always the head
-    snake.cells.unshift({x: snake.x, y: snake.y});
-  
-    // remove cells as we move away from them
-    if (snake.cells.length > snake.maxCells) {
-      snake.cells.pop();
-    }
-  
-    // draw apple
-    context.fillStyle = 'red';
-    context.fillRect(apple.x, apple.y, grid-1, grid-1);
-  
-    // draw snake one cell at a time
-    context.fillStyle = 'green';
-    snake.cells.forEach(function(cell, index) {
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="me.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            
+          </div>
+        </div>
+        <div class="w3-container">
+            <h2><u>Zainaaz Hansa</u></h2>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>BSc in IT student</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>South Africa</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>zainaazhansa@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>076 254 1846</p>
+          <hr>
+           
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i><u>Education</u></b></p>
+          <p> Pioneer Primary School (2010-2016)
+              <br> Willowmoore High School (2017-2021) </p>
+
+              <hr>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i><u>Skills</u></b></p>
+          <p>Adobe Photoshop</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>Photography</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>Illustrator</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <p>Media</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <p>Media</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <p>Media</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <br>
+         
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+      <p>  I am an open minded liberal who aspires to be a better version of myself each day, pushing boundaries and living my best life. I aim to be in an environment and ultimately a job in the Tech-Industry as being highly passionate about the field you go into cultivates a feeling of never having to “work” a day in your life. I aspire to contribute in a small way to my environment and community all while advancing myself, giving back to current generations and uplifting future generations.
+        I have chosen to study a BSc majoring in Information Technology. I am tech-savvy and passionate about STEM. After completing my studies, I aspire to go into a field such as AI, robotics, multimedia or software development. Studying this course will give me the opportunity to gain a new outlook on the scope of Technology and Computer Science with access to the resources and infrastructure to cure my curiosity.
+      </p>
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Curriculum Vitae</h2>
+        <div class="w3-container">
+           <span class="w3-tag w3-teal w3-round">Colours Awarded</span>
+         <ul> <li> Academic Half Colors								(2018, 2019) </li>
+            <li>  Academic Full Colors								(2019)</li>
+               <li>  Robotics Honors 								(2020)</li>
+        <li> Cricket Half Colors								(2020)</li>
+          <li> Girl Guides Full Colors 								(2020)</li>
+          <li> Extra Mural Honors 								(2021)</li>
+               <li>  Prestige White Blazer								(2021)</li>
+        <li>  Academic honors 								(2021)</li>
+          <li>  Cultural Half Colors  								(2021)</li></ul>         
       
-      // drawing 1 px smaller than the grid creates a grid effect in the snake body so you can see how long it is
-      context.fillRect(cell.x, cell.y, grid-1, grid-1);  
-  
-      // snake ate apple
-      if (cell.x === apple.x && cell.y === apple.y) {
-        snake.maxCells++;
-  
-        // canvas is 400x400 which is 25x25 grids 
-        apple.x = getRandomInt(0, 25) * grid;
-        apple.y = getRandomInt(0, 25) * grid;
-      }
-  
-      // check collision with all cells after this one (modified bubble sort)
-      for (var i = index + 1; i < snake.cells.length; i++) {
+
+          <span class="w3-tag w3-teal w3-round">Trophys Awarded</span>
+         <ul><li> Cum Laude Trophy								(2021)</li>
+            <li>Le Roux Trophy for Achievements in Olympiads 					(2019)</li>
+     <li>Campbell McVie Trophy for Participation in Extra Murals 			(2019)</li>
+ <li>Trophy for Courage and Curiosity						(2019)</li>
+          <li>Laing Trophy for Best Junior All Rounder 					(2018)</li>
+              <li>Outstanding Achievement in Extra Mural Activities				(2020)</li>
+         <li>John Barrable award for Academic, Cultural and Sport involvement		(2021)</li>
+           <li>Top Student in CAT and IT 							(2021) </li></ul>
+
+           <span class="w3-tag w3-teal w3-round">Leadership Roles</span>
+          <ul><li> RCL (Representative Council of Learners)					(2016)</li>
+            <li> House Captain									(2016)</li>
+          <li> Captain of Robotics 								(2018-2021)</li>
+         <li> Chairperson for Girl Guides 							(2019)</li>
+           <li>  Captain for Girls Table Tennis Team 						(2020)</li>
+         <li>  House Captain				(2021)	</li>
+            <li>   Chairperson for House Captain  (2021) </li></ul>
+
+
+
+            <span class="w3-tag w3-teal w3-round">National Recognition</span>
+           
+         <ul>  <li>  Attended SA SPAR Future Warriors Conference in KZN 				(2016) </li>
+           <li>  CAT Olympiad (Top 5% in SA)							(2019)</li>
+            <li>  South African National Robotics Championships					(2018, 2019)</li>
+            <li>  Best Robotics Core Values Inspiration Award in SA 				(2019)</li>
+            <li>   Selected to represent SA for Robotics in Rwanda 				(2019)</li>
+             <li>  Represented SA at the Global Roundtable for Girl Guides 			(2020)</li>
+              <li>  Awarded Bursary to attend National Children's Theatre 				(2017) </li>
+             <li>North West University Math Olympiad 1st Place					(2018)</li>
+           <li>  North West University Math Olympiad 2nd Place					(2019)</li>
+            <li> North West University IT Project 2nd Place					(2019)</li>
+        <li> Vodacom #CodeLikeAGirl 2021 winner (2021)</li></ul> 
+           
+        <span class="w3-tag w3-teal w3-round">References</span><br>
+        <a href="https://benonicitytimes.co.za/409429/willomoore-high-school-learner-receives-cum-laude-award-2020/">View Cum Laude award newspaper article</a><br>
+        <a href="https://www.facebook.com/permalink.php?id=581678825333847&story_fbid=2058572904311091">View Cum Laude Facebook article</a><br>
+       <a href="http://www.willowmoore.co.za/february-2021-newsletter/"> View Cum Laude school newsletter</a><br>
+        <a href="http://www.willowmoore.co.za/october-2019-newsletter/"> View NWU Geexpo prizes</a>
+
+            
         
-        // snake occupies same space as a body part. reset game
-        if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
-          snake.x = 160;
-          snake.y = 160;
-          snake.cells = [];
-          snake.maxCells = 4;
-          snake.dx = grid;
-          snake.dy = 0;
-  
-          apple.x = getRandomInt(0, 25) * grid;
-          apple.y = getRandomInt(0, 25) * grid;
-        }
-      }
-    });
-  }
-  
-  // listen to keyboard events to move the snake
-  document.addEventListener('keydown', function(e) {
-    // prevent snake from backtracking on itself by checking that it's 
-    // not already moving on the same axis (pressing left while moving
-    // left won't do anything, and pressing right while moving left
-    // shouldn't let you collide with your own body)
+       
+     
+    </div>
+
+    <br>
+    <!-- End Right Column -->
+    </div>
     
-    // left arrow key
-    if (e.which === 37 && snake.dx === 0) {
-      snake.dx = -grid;
-      snake.dy = 0;
-    }
-    // up arrow key
-    else if (e.which === 38 && snake.dy === 0) {
-      snake.dy = -grid;
-      snake.dx = 0;
-    }
-    // right arrow key
-    else if (e.which === 39 && snake.dx === 0) {
-      snake.dx = grid;
-      snake.dy = 0;
-    }
-    // down arrow key
-    else if (e.which === 40 && snake.dy === 0) {
-      snake.dy = grid;
-      snake.dx = 0;
-    }
-  });
+  <!-- End Grid -->
+  </div>
   
-  // start the game
-  requestAnimationFrame(loop);
+  <!-- End Page Container -->
+</div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("mySideBar");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
   </script>
 
-  </section>
-</myDIV>
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <br>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Zainaaz Hansa (2022)</p>
+</footer>
+
 </body>
-
-
-<!-- Footer -->
-   <footer class="p-3 bg-dark text-white text-center position-relative">
-     <div class="container" style="vertical-align:middle;margin-top:10px">
-       <p class="lead"><i>Zainaaz Hansa - Code like a girl 2021 - Vodacom</i></p>
-
-       <a href="#" class="position-absolute bottom-0 end-0 p-5">
-         <i class="bi bi-arrow-up-circle h1"></i>
-       </a>
-     </div>
-   </footer>
-
-
 </html>

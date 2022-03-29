@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey" style="height: 100%;">
+
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card w3-large">
+      <a href="#home" class="w3-bar-item w3-button w3-wide">ZAINAAZ HANSA</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="index.html" class="w3-bar-item w3-button">About Me</a>
+        <a href="typing.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Typing & Tutoring</a>
+        <a href="portfolio.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Portfolio</a>
+        <a href="recources.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Resources</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  
+      
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  
+  
+    <div id="mySideBar" class=" w3-animate-right w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <br>
+      <br>
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">About Me</a>
+    <a href="typing.html" onclick="w3_close()" class="w3-bar-item w3-button">Typing & Tutoring</a>
+    <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">Portfolio</a>
+    <a href="recources.html" onclick="w3_close()" class="w3-bar-item w3-button">Resources</a>
+    </div>
+  
+
+<br>
+<br>
+<!-- Page Container -->
+<div class= "w3-content w3-margin-top" style="max-width:1400px;     margin-top: 100px;">
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  <div class="w3-container w3-card w3-white w3-margin-bottom">
+    
+    <h2 class="w3-text-grey w3-center"><u>Just Your Type Portfolio</u></h2>
+  </div>
+    <div class="w3-container w3-card w3-white w3-margin-bottom">
+      <br>
+    <table class="center">
+        <tr>
+          <th colspan="3">Typing and designing of:</th>
+        
+        </tr>
+        <tr>
+          <td >  <img src="portfolio/2.jpg" style="width:100%"></td>
+          <td><img src="portfolio/3.jpg" style="width:100%"></td>
+          <td>        <img src="portfolio/4.jpg" style="width:100%"></td>
+        </tr>
+        <tr>
+          <td>Spreadsheets</td>
+          <td>Databases</td>
+          <td>Presentations</td>
+        </tr>
+      
+
+
+      </table>
+<br>
+    
+  <!-- End Grid -->
+  </div>
+      </div>
+
+  <!-- End Page Container -->
+
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("mySideBar");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <br>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Zainaaz Hansa (2022)</p>
+</footer>
+
+  </div>
+</body>
+</html>
+
