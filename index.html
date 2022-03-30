@@ -6,11 +6,15 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<head>
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
-<body class="w3-light-grey ">
+
+
+
+</head>
+<body class="w3-light-grey " id="top">
   <a name="Heading"></a>
 
 <div class="w3-top">
@@ -26,7 +30,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
     
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" 
+    onclick="myFunction()">&#9776;</a>
     </a>
   </div>
 </div>
@@ -193,11 +198,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <script>
   function myFunction() {
     var x = document.getElementById("mySideBar");
+   
     if (x.className.indexOf("w3-show") == -1) {
       x.className += " w3-show";
     } else { 
       x.className = x.className.replace(" w3-show", "");
-    }
+    } 
+    location.href='#top';
   }
   </script>
 
