@@ -1,3 +1,18 @@
+.container2 {
+  display: grid;
+  grid-template-columns: auto 1fr; /* First column for image, second column for paragraph */
+  align-items: center; /* Align items vertically in the center */
+  column-gap: 10px; /* Adjust spacing between image and paragraph */
+}
+
+.image2 {
+  grid-column: 1 / 2; /* Image occupies the first column */
+}
+
+.paragraph2 {
+  grid-column: 2 / 3; /* Paragraph occupies the second column */
+}
+
 #ABC {
     margin-top: 100px;
     max-width:1400px;
