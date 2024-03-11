@@ -4,3 +4,11 @@
   }
   
 }
+@media screen and (max-width: 600px) {
+    .w3-button.w3-teal {
+      width: 100%;
+      min-height: auto; /* Reset the height */
+      white-space: normal; /* Allow the text to wrap onto the next line */
+    }
+  }
+  
