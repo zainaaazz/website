@@ -295,12 +295,24 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                         tr:hover { /* Target rows on hover */
                           background-color: teal; /* Adjust highlight color */
                         }
+                        table.responsive-table {
+                          border-collapse: collapse;
+                          width: 100%; /* Ensures table takes full width on all screens */
+                        }
+                        /* Media queries for responsive adjustments */
+                        @media (max-width: 768px) {  /* Adjust breakpoint for smaller screens */
+                          /* Hide unnecessary columns on small screens */
+                          th:nth-child(3),  /* Hide Description column (adjust index as needed) */
+                          td:nth-child(3) {
+                            display: none;
+                          }
+                        }
                         </style>
                         
                         
                         
                         
-                        <table>
+                        <table class="responsive-table">
                           <tr>
                             <th>Code</th>
                             <th>Module Description</th>
