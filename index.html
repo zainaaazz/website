@@ -302,8 +302,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                         /* Media queries for responsive adjustments */
                         @media (max-width: 768px) {  /* Adjust breakpoint for smaller screens */
                           /* Hide unnecessary columns on small screens */
-                          th:nth-child(3),  /* Hide Description column (adjust index as needed) */
-                          td:nth-child(3) {
+                           table.responsive-results th:nth-child(2),  /* Hide Description column */
+                           table.responsive-results td:nth-child(2) {
                             display: none;
                           }
                         }
