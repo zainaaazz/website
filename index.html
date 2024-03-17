@@ -300,10 +300,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                           width: 100%; /* Ensures table takes full width on all screens */
                         }
                         /* Media queries for responsive adjustments */
-                        @media (max-width: 768px) {  /* Adjust breakpoint for smaller screens */
-                          /* Hide unnecessary columns on small screens */
-                           table.responsive-results th:nth-child(2),  /* Hide Description column */
-                           table.responsive-results td:nth-child(2) {
+                        @media (max-width: 768px) {  /* Adjust breakpoint as needed */
+                          table.responsive-results th:last-child,  /* Hide last table header */
+                          table.responsive-results td:last-child {  /* Hide last table data cell */
                             display: none;
                           }
                         }
