@@ -6,11 +6,14 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <link rel="stylesheet" type="text/css" href="styles88.css">
 <head >
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
+.mySlides {display:none}
+.mySlides:first-child {display: block;} /* Show the first image initially */
 </style>
 
 <!-- THINGS TO CHANGE ON WEBSITE 
@@ -147,6 +150,59 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
          <br>
 
 
+         <script>
+          // Call showDivs(1) immediately on page load to display the first slide
+            showDivs(1);
+
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+              showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}  
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-teal", "");
+              }
+              x[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " w3-teal";
+            }
+          </script>
+          
+
+         <div class="w3-content" style="max-width:800px">
+          <img class="mySlides" src="image1.jpg" style="width:100%">
+          <img class="mySlides" src="image2.jpg" style="width:100%">
+          <img class="mySlides" src="image3.jpg" style="width:100%">
+          <img class="mySlides" src="image4.jpg" style="width:100%">
+          <img class="mySlides" src="image5.jpg" style="width:100%">
+          <img class="mySlides" src="image6.jpg" style="width:100%">
+        </div>
+        
+        <div class="w3-center">
+          <div class="w3-section">
+            <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+            <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+          </div>
+          <button class="w3-button demo w3-teal" onclick="currentDiv(1)">1</button>
+          <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+          <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+          <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
+          <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
+          <button class="w3-button demo" onclick="currentDiv(6)">6</button> 
+        </div>
+
+        <br><br>
 <span class="w3-tag w3-teal w3-round">Reference Links</span><br><br>
 <a href="https://www.linkedin.com/in/zainaaz-hansa-a8795a203"> View LinkedIn profile (recommended) </a><br>
 <a href="https://benonicitytimes.co.za/409429/willomoore-high-school-learner-receives-cum-laude-award-2020/">View Cum Laude award newspaper article</a><br>
@@ -272,6 +328,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                        <span class="w3-tag w3-teal w3-round">University Recognition</span>
                        <ul> <li>Faculty top achiever - Second place in the subject group for Computer Science and Information Systems at the NWU for Year 1 (2022)</li>
                         <li> Golden Key International Honours Society invitation to join as a member </li>
+                        <li> Inter Faculty Table Tennis (Faculty team player) - First Place (2024)</li>
                       </ul> 
 
 
