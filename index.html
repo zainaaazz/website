@@ -9,11 +9,53 @@
 
 <link rel="stylesheet" type="text/css" href="styles88.css">
 <head >
+
+  <script type="application/ld+json">
+    [{
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "url": "image1.jpg",  "name": "Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School",
+      "description": "Zainaaz Hansa achievements at Vodacom, including CodeLikeAGirl program. Willowmoore High School Alumni"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "url": "image2.jpg",  "name": "Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School",
+      "description": "Zainaaz Hansa achievements at Vodacom, including CodeLikeAGirl program. Willowmoore High School Alumni"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "url": "image3.jpg",  "name": "Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School",
+      "description": "Zainaaz Hansa achievements at Vodacom, including CodeLikeAGirl program. Willowmoore High School Alumni"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "url": "image4.jpg",  "name": "Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School",
+      "description": "Zainaaz Hansa achievements at Vodacom, including CodeLikeAGirl program. Willowmoore High School Alumni"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "url": "image5.jpg",  "name": "Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School",
+      "description": "Zainaaz Hansa achievements at Vodacom, including CodeLikeAGirl program. Willowmoore High School Alumni"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "url": "image6.jpg",  "name": "Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School",
+      "description": "Zainaaz Hansa achievements at Vodacom, including CodeLikeAGirl program. Willowmoore High School Alumni"
+    }]
+  </script>
+
+
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 .mySlides {display:none}
 .mySlides:first-child {display: block;} /* Show the first image initially */
+.caption {display:none}
 </style>
 
 <!-- THINGS TO CHANGE ON WEBSITE 
@@ -165,30 +207,48 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             function showDivs(n) {
               var i;
               var x = document.getElementsByClassName("mySlides");
+              var captions = document.getElementsByClassName("caption"); // Get all captions
               var dots = document.getElementsByClassName("demo");
               if (n > x.length) {slideIndex = 1}  
               if (n < 1) {slideIndex = x.length}
               for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
+                x[i].style.display = "none"; 
+                captions[i].style.display = "none"; // Hide all captions 
               }
               for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" w3-teal", "");
               }
+              // Only show the caption for the current slide (or first slide on load)
+                if (n === 1 || n !== slideIndex) { // Check if it's the first slide or a new slide
+                  captions[slideIndex-1].style.display = "block"; // Show the corresponding caption
+                }
               x[slideIndex-1].style.display = "block";  
               dots[slideIndex-1].className += " w3-teal";
+              captions[slideIndex-1].style.display = "block"; // Show the corresponding caption
+
+              
             }
           </script>
+        
           
 
          <div class="w3-content" style="max-width:800px">
-          <img class="mySlides" src="image1.jpg" style="width:100%">
-          <img class="mySlides" src="image2.jpg" style="width:100%">
-          <img class="mySlides" src="image3.jpg" style="width:100%">
-          <img class="mySlides" src="image4.jpg" style="width:100%">
-          <img class="mySlides" src="image5.jpg" style="width:100%">
-          <img class="mySlides" src="image6.jpg" style="width:100%">
+          <img class="mySlides" src="image1.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
+          <p class="caption">Speaker at Vodacom's CodeLikeAGirl Press release<br>(2022)</p> 
+          <img class="mySlides" src="image2.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
+          <p class="caption">Golden Key International Honours Society Member<br>(2022)</p>  
+
+          <img class="mySlides" src="image3.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
+          <p class="caption">@ Vodacom's head office in Midrand in my Vodacom gear<br>(2023) </p> 
+          <img class="mySlides" src="image4.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
+          <p class="caption">My Vodacom Employee card during Vacation Work<br>(2023)</p> 
+          <img class="mySlides" src="image5.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
+          <p class="caption">Met Vodacom's Group CTO - Dejan Kastellic<br>(2023)</p> 
+          <img class="mySlides" src="image6.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
+          <p class="caption">Proud Vodacom bursar and alumni<br>(2023) </p> 
         </div>
         
+      
         <div class="w3-center">
           <div class="w3-section">
             <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
