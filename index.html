@@ -8,7 +8,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" type="text/css" href="styles88.css">
-<head >
+<head>
+
+  <!--METADATA FOR IMAGES (SEO THINGS)-->
 
   <script type="application/ld+json">
     [{
@@ -47,33 +49,32 @@
       "url": "image6.jpg",  "name": "Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School",
       "description": "Zainaaz Hansa achievements at Vodacom, including CodeLikeAGirl program. Willowmoore High School Alumni"
     }]
+
+    
   </script>
 
-
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-body {
-  background-color: #282424;
-  color: white; /* Add this line for white text */
-}
-ul{
-  padding-left:15px;
-}
-.mySlides {display:none}
-.mySlides:first-child {display: block;} /* Show the first image initially */
-.caption {display:none}
+  html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+  body { background-color: #282424; color: white; /* Add this line for white text */}
+  ul {padding-left:15px;}
+  .mySlides {display:none}
+  .mySlides:first-child {display: block;} /* Show the first image initially */
+  .caption {display:none}
 </style>
 
 <!-- THINGS TO CHANGE ON WEBSITE 
- 1. ABOUT ME TITLE vs CV ? then what happens to the about me page itself? maybe change that name too?
- 2. Fix all module marks? do i want to add the module marks in a list on the right? or keep on the left? some modules on left (maybe only coding ones)
- 3. add golden key pic. maybe vodacom pic as well - maybe in a slideshow at the end.
- 4. Add table tennis faculty things
+ add slideshow or portfolio of APP GUIs.
+ mention and add screenshots of past paper app
+ fix slide show caption bug
+ change colour schemes of other pages - update them as well
+ add image7 to slideshow (whs awards)
+ remove numbering under slideshow number 1.. add nu,ber to caption instead (1 of 5 eg)
 -->
 
-
 <body style="background-color: #211F1F;">            <!--COLOURRRRRRRR-->
-  <a name="Heading"></a>
+
+
+<!-- DESKTOP NAVIGATION BAR -->
 
 <div class="w3-top" id="top">               <!--COLOURRRRRRRR-->
   <div class="w3-bar w3-black w3-card">
@@ -86,28 +87,25 @@ ul{
       <a href="portfolio.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Portfolio</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" 
     onclick="myFunction()">&#9776;</a>
     </a>
   </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
 
+<!-- MOBILE (SMALL SCREEN) MENU ICON + NAVIGATION BAR -->
 
-  <div id="mySideBar" class=" w3-animate-right w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">  <!--COLOURRRRRRRR-->  
-    <br>
-    <br>
+<div id="mySideBar" class=" w3-animate-right w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">  <!--COLOURRRRRRRR-->  
+  <br><br>
   <a href="index.html"      onclick="w3_close()" class="w3-bar-item w3-button"> CV</a>
   <a href="interview.html"  onclick="w3_close()" class="w3-bar-item w3-button"> About Me</a>
   <a href="typing.html"     onclick="w3_close()" class="w3-bar-item w3-button"> Typing & Tutoring</a>
   <a href="portfolio.html"  onclick="w3_close()" class="w3-bar-item w3-button"> Portfolio</a>
-  </div>
+</div>
 
 
-<!-- Page Container -->
+<!-- PAGE CONTAINER -->
 <div class= "w3-content w3-margin-top" style="max-width:1400px;     margin-top: 100px;" id="top">
 <br>
 <br>
@@ -121,33 +119,39 @@ ul{
       <div class="w3-black w3-text-white w3-card-4">      <!--COLOURRRRRRRR-->
         <div class="w3-display-container">
           <img src="me.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            
-          </div>
+          <div class="w3-display-bottomleft w3-container w3-text-black"></div>
         </div>
+        
         <div class="w3-container"  style="background-color: #111010;">    <!--COLOURRRRRRRR-->
          
+          <!-- PERSONAL INFO (LEFT)-->
           <h2 class="w3-text-teal"><b>Zainaaz Hansa</b></h2>
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>BSc in IT student (Final Year Student)</p>
           <p><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-large w3-text-teal"></i>Vodacom Alumni & Bursar</p>
-          
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>South Africa</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>zainaazhansa@gmail.com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>076 254 1846</p>
           <hr>
            
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i><u>Education</u></b></p>
-          <p> Pioneer Primary School (2010 - 2016)
-              <br> Willowmoore High School (2017 - 2021) 
-             <br> &nbsp; &nbsp;6 Distinctions
-            <br>North West University (2022 - Present)
-            <br> &nbsp; &nbsp;23 Modules, 23 Distinctions
-            </p>
+          <ul> <li>Pioneer Primary School (2010 - 2016)</li>
+            <li> Willowmoore High School (2017 - 2021) 
+            <br> &nbsp; &nbsp;6 Distinctions</li>
+            <li>North West University (2022 - Present)
+            <br> &nbsp; &nbsp;23 Modules, 23 Distinctions (so far)</li>
+          </ul>
+          <hr>
 
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i><u>Work Experience</u></b></p>
+          <ul> <li>Mathematics Tutor's Secretary - typing of notes and textbooks (2021 - 2022)
+            <li> High School IT tutor (2022 - Present)</li>
+            <li> NWU CMPG 111 (Python) Student Assistant and Marker (2024)</li>
+            <li> Vodacom Vacation work (July 2023)</li>
+            
+          </ul>
+          <hr>
 
-              <hr>
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i><u>Skills & University Modules</u></b></p>
-        
           <p>Delphi & Firemonkey (IT - matriculated with 93%)</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:93%">
@@ -158,7 +162,6 @@ ul{
           <p>Word, Excel, Access (CAT - matriculated with 91%) </p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:91%">91%</div>
-            
           </div>
 
           <p>NWU CMPG 111 (Python)</p>
@@ -171,15 +174,16 @@ ul{
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:92%">92%</div>
           </div>
 
-          
           <p>Adobe Photoshop</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
           </div>
+
           <p>Javascript</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:40%">40%</div>
           </div>
+
           <p>HTML & CSS</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
@@ -188,19 +192,22 @@ ul{
 
           <br>
           <span class="w3-tag w3-teal w3-round">Hobbies</span>
-          <ul> <li>Table Tennis</li>
-           <li>Ice Skating</li>
-           <li>Padel</li>
-           <li>Skateboarding</li>
-           <li>Restaurant hopping</li>
-           <li>Movie review</li>
-           <li>Listening to music</li>
-         </ul> 
-         <br>
-
-
-         <script>
-          // Call showDivs(1) immediately on page load to display the first slide
+          <ul>
+            <li>Public Speaking</li>
+            <li>Table Tennis</li>
+            <li>Ice Skating</li>
+            <li>Roller Skateboarding</li>
+            <li>Padel</li>
+            <li>Skateboarding</li>
+            <li>Restaurant hopping</li>
+            <li>Movie reviewing</li>
+            <li>Listening to music</li>
+          </ul> 
+          
+          <br>
+        
+          <script>
+            // Call showDivs(1) immediately on page load to display the first slide
             showDivs(1);
 
             function plusDivs(n) {
@@ -218,227 +225,212 @@ ul{
               var dots = document.getElementsByClassName("demo");
               if (n > x.length) {slideIndex = 1}  
               if (n < 1) {slideIndex = x.length}
+
               for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none"; 
                 captions[i].style.display = "none"; // Hide all captions 
               }
+
               for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-teal", "");
+                dots[i].className = dots[i].className.replace("w3-teal", "");
               }
-              // Only show the caption for the current slide (or first slide on load)
-                if (n === 1 || n !== slideIndex) { // Check if it's the first slide or a new slide
-                  captions[slideIndex-1].style.display = "block"; // Show the corresponding caption
-                }
+              
               x[slideIndex-1].style.display = "block";  
               dots[slideIndex-1].className += " w3-teal";
               captions[slideIndex-1].style.display = "block"; // Show the corresponding caption
 
-              
             }
           </script>
-        
           
+            <!--SLIDESHOW CONTENT-->
 
-         <div class="w3-content" style="max-width:800px">
-          <img class="mySlides" src="image1.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
-          <p class="caption">Speaker at Vodacom's CodeLikeAGirl Press release<br>(2022)</p> 
-          <img class="mySlides" src="image2.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
-          <p class="caption">Golden Key International Honours Society Member<br>(2022)</p>  
+            <div class="w3-content" style="max-width:800px">
+              <img class="mySlides" src="image1.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
+              <p class="caption">Speaker at Vodacom's CodeLikeAGirl Press release<br>(2022)</p> 
 
-          <img class="mySlides" src="image3.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
-          <p class="caption">@ Vodacom's head office in Midrand in my Vodacom gear<br>(2023) </p> 
-          <img class="mySlides" src="image4.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
-          <p class="caption">My Vodacom Employee card during Vacation Work<br>(2023)</p> 
-          <img class="mySlides" src="image5.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
-          <p class="caption">Met Vodacom's Group CTO - Dejan Kastellic<br>(2023)</p> 
-          <img class="mySlides" src="image6.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
-          <p class="caption">Proud Vodacom bursar and alumni<br>(2023) </p> 
-        </div>
-        
-      
-        <div class="w3-center">
-          <div class="w3-section">
-            <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
-            <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+              <img class="mySlides" src="image2.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
+              <p class="caption">Golden Key International Honours Society Member<br>(2022)</p> 
+
+              <img class="mySlides" src="image3.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
+              <p class="caption">@ Vodacom's head office in Midrand in my Vodacom gear<br>(2023) </p> 
+
+              <img class="mySlides" src="image4.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
+              <p class="caption">My Vodacom Employee card during Vacation Work<br>(2023)</p> 
+
+              <img class="mySlides" src="image5.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
+              <p class="caption">Met Vodacom's Group CTO - Dejan Kastellic<br>(2023)</p> 
+
+              <img class="mySlides" src="image6.jpg" style="width:100%" alt="Zainaaz Hansa Vodacom CodeLikeAGirl Willowmoore High School">
+              <p class="caption">Proud Vodacom bursar and alumni<br>(2023) </p> 
+            </div>
+            
+            <!--SLIDESHOW BUTTONS-->
+          
+            <div class="w3-center">
+              <div class="w3-section">
+                <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+                <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+              </div>
+              <button class="w3-button demo w3-teal" onclick="currentDiv(1)">1</button>
+              <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+              <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+              <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
+              <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
+              <button class="w3-button demo" onclick="currentDiv(6)">6</button> 
+            </div>
+
+          <br><br>
+
+          <!--REFERENCE LINKS-->
+
+          <span class="w3-tag w3-teal w3-round">Reference Links</span><br><br>
+          <a href="https://www.linkedin.com/in/zainaaz-hansa-a8795a203"> View LinkedIn profile (recommended) </a><br>
+          <a href="https://benonicitytimes.co.za/409429/willomoore-high-school-learner-receives-cum-laude-award-2020/">View Cum Laude award newspaper article</a><br>
+          <a href="https://www.facebook.com/permalink.php?id=581678825333847&story_fbid=2058572904311091">View Cum Laude Facebook article</a><br>
+          <a href="http://www.willowmoore.co.za/february-2021-newsletter/"> View Cum Laude school newsletter</a><br>
+          <a href="http://www.willowmoore.co.za/october-2019-newsletter/"> View NWU Geexpo prizes</a>
+
+
+          <!--BUTTONS-->
+
+          <div>
+            <p><a href="https://github.com/zainaaazz" target="_blank" class="w3-button w3-teal"><i class="fa fa-th"> </i> View Zainaaz Hansa GitHub Account</a></p>
           </div>
-          <button class="w3-button demo w3-teal" onclick="currentDiv(1)">1</button>
-          <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
-          <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
-          <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
-          <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
-          <button class="w3-button demo" onclick="currentDiv(6)">6</button> 
-        </div>
 
-        <br><br>
-<span class="w3-tag w3-teal w3-round">Reference Links</span><br><br>
-<a href="https://www.linkedin.com/in/zainaaz-hansa-a8795a203"> View LinkedIn profile (recommended) </a><br>
-<a href="https://benonicitytimes.co.za/409429/willomoore-high-school-learner-receives-cum-laude-award-2020/">View Cum Laude award newspaper article</a><br>
-<a href="https://www.facebook.com/permalink.php?id=581678825333847&story_fbid=2058572904311091">View Cum Laude Facebook article</a><br>
-<a href="http://www.willowmoore.co.za/february-2021-newsletter/"> View Cum Laude school newsletter</a><br>
-<a href="http://www.willowmoore.co.za/october-2019-newsletter/"> View NWU Geexpo prizes</a>
+          <div>
+            <p><a href="https://www.google.com/search?client=opera-gx&q=zainaaz+hansa&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank" class="w3-button w3-teal"><i class="fa fa-th"> </i>Google Search Zainaaz Hansa</a></p>
+          </div>
 
+          <div>
+            <p><a href="https://drive.google.com/file/d/1-nCXbwT4ygPzHvQ4wq6VeBEuaDR55UsZ/view?usp=sharing" target="_blank" class="w3-button w3-teal"><i class="fa fa-th"> </i> View Testimonial from Willowmoore High School</a></p>
+          </div>
 
-<div>
-  <p><a href="https://github.com/zainaaazz" target="_blank" class="w3-button w3-teal"><i class="fa fa-th"> </i> View Zainaaz Hansa GitHub Account</a></p>
-  </div>
-
-<div>
-  <p><a href="https://www.google.com/search?client=opera-gx&q=zainaaz+hansa&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank" class="w3-button w3-teal"><i class="fa fa-th"> </i>Google Search Zainaaz Hansa</a></p>
-  </div>
-
-
-<div>
-<p><a href="https://drive.google.com/file/d/1-nCXbwT4ygPzHvQ4wq6VeBEuaDR55UsZ/view?usp=sharing" target="_blank" class="w3-button w3-teal"><i class="fa fa-th"> </i> View Testimonial from Willowmoore High School</a></p>
-</div>
-
-
-
-
-
-         
         </div>
       </div><br>
 
-    <!-- End Left Column -->
-    </div>
+    </div><!-- End Left Column -->
+    
 
     <!-- Right Column -->
     <div class="w3-twothird">
   
+      <p> 
+        I am an open minded liberal who aspires to be a better version of myself each day, pushing boundaries and living my best life. I aim to be in an environment and ultimately a job in the Tech-Industry as being highly passionate about the field you go into cultivates a feeling of never having to “work” a day in your life. I aspire to contribute in a small way to my environment and community all while advancing myself, giving back to current generations and uplifting future generations.
+        I have chosen to study a BSc majoring in Information Technology and I am currently in my final year. I am tech-savvy and passionate about STEM. After completing my Bachelors degree, I aspire to go forward with my Honours and thereafter into a field such as AI, robotics, multimedia or software development. Studying this course will give me the opportunity to gain a new outlook on the scope of Technology and Computer Science with access to the resources and infrastructure to cure my curiosity.
+      </p>
       
-       
 
-            <p> I am an open minded liberal who aspires to be a better version of myself each day, pushing boundaries and living my best life. I aim to be in an environment and ultimately a job in the Tech-Industry as being highly passionate about the field you go into cultivates a feeling of never having to “work” a day in your life. I aspire to contribute in a small way to my environment and community all while advancing myself, giving back to current generations and uplifting future generations.
-              I have chosen to study a BSc majoring in Information Technology and I am currently in my final year. I am tech-savvy and passionate about STEM. After completing my Bachelors degree, I aspire to go forward with my Honours and thereafter into a field such as AI, robotics, multimedia or software development. Studying this course will give me the opportunity to gain a new outlook on the scope of Technology and Computer Science with access to the resources and infrastructure to cure my curiosity.
-            </p>
-      
-        
-     
-     
-            <div class="w3-container w3-margin-bottom"  style="background-color: #111010;">    <!--COLOURRRRRRRR-->
+      <div class="w3-container w3-margin-bottom"  style="background-color: #111010;">    <!--COLOURRRRRRRR-->
         <h2 class="w3-text-teal w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><b>Curriculum Vitae</b></h2>
         <div class="w3-container">
-           <span class="w3-tag w3-teal w3-round">Colours Awarded</span>
-         <ul> <li> Academic Half Colors								(2018, 2019) </li>
-            <li>  Academic Full Colors								(2019)</li>
-               <li>  Robotics Honors 								(2020)</li>
-        <li> Cricket Half Colors								(2020)</li>
-          <li> Girl Guides Full Colors 								(2020)</li>
-          <li> Extra Mural Honors 								(2021)</li>
-               <li>  Prestige White Blazer								(2021)</li>
-        <li>  Academic honors 								(2021)</li>
-          <li>  Cultural Half Colors  								(2021)</li></ul>         
+        
+        <span class="w3-tag w3-teal w3-round">Colours Awarded (High School)</span>
+        <ul> 
+          <li>  Academic Half Colours (2018, 2019) </li>
+          <li>  Academic Full Colours	(2019)       </li>
+          <li>  Robotics Honours (2020)            </li>
+          <li>  Cricket Half Colours	(2020)       </li>
+          <li>  Girl Guides Full Colours (2020)    </li>
+          <li>  Extra Mural Honours (2021)         </li>
+          <li>  Prestige White Blazer (2021)       </li>
+          <li>  Academic honours (2021)            </li>
+          <li>  Cultural Half Colours (2021)       </li>
+        </ul>         
       
 
-          <span class="w3-tag w3-teal w3-round">Trophys Awarded</span>
-         <ul><li> Cum Laude Trophy								(2021)</li>
-            <li>Le Roux Trophy for Achievements in Olympiads 					(2019)</li>
-     <li>Campbell McVie Trophy for Participation in Extra Murals 			(2019)</li>
- <li>Trophy for Courage and Curiosity						(2019)</li>
-          <li>Laing Trophy for Best Junior All Rounder 					(2018)</li>
-              <li>Outstanding Achievement in Extra Mural Activities				(2020)</li>
-         <li>John Barrable award for Academic, Cultural and Sport involvement		(2021)</li>
-           <li>Top Student in CAT and IT 							(2021) </li>
-           <li>NWU Faculty of Science	Top Achiever award	- Second place in subject group Computer Science and Information Systems				(2022) </li>
+        <span class="w3-tag w3-teal w3-round"><b>Trophys Awarded</b></span>
+        <ul>
+          <li>  Cum Laude Trophy (2021)</li>
+          <li>  Le Roux Trophy for Achievements in Olympiads (2019)</li>
+          <li>  Campbell McVie Trophy for Participation in Extra Murals (2019)</li>
+          <li>  Trophy for Courage and Curiosity (2019)</li>
+          <li>  Laing Trophy for Best Junior All Rounder (2018)</li>
+          <li>  Outstanding Achievement in Extra Mural Activities	(2020)</li>
+          <li>  John Barrable award for Academic, Cultural and Sport involvement (2021)</li>
+          <li>  Top Student in CAT and IT (2021) </li>
+          <li>  NWU Faculty of Science	Top Achiever award - Second place in subject group Computer Science and Information Systems (2022) </li>
+        </ul>
+
+           <span class="w3-tag w3-teal w3-round"><b>Leadership Roles</b></span>
+          <ul>
+            <li>  RCL (Representative Council of Learners) (2016)   </li>
+            <li>  House Captain	(2016)                              </li>
+            <li>  Captain of Robotics (2018-2021)                   </li>
+            <li>  Chairperson for Girl Guides (2019)                </li>
+            <li>  Captain for Girls Table Tennis Team (2020)        </li>
+            <li>  House Captain	(2021)	                            </li>
+            <li>  Chairperson for House Captain (2021)              </li>
+            <li>  Mentor for robotics team (2022-2024)              </li>
+            <li>  Class Representative for CMPG 122 (2022)          </li>
           </ul>
 
-           <span class="w3-tag w3-teal w3-round">Leadership Roles</span>
-          <ul><li> RCL (Representative Council of Learners)					(2016)</li>
-            <li> House Captain									(2016)</li>
-          <li> Captain of Robotics 								(2018-2021)</li>
-         <li> Chairperson for Girl Guides 							(2019)</li>
-           <li>  Captain for Girls Table Tennis Team 						(2020)</li>
-         <li>  House Captain				(2021)	</li>
-            <li>   Chairperson for House Captain  (2021) </li>
-          <li> Mentor for robotics team (2022-2024)</li>
-          <li> Class Representative for CMPG 122 (2022)</li></ul>
-
-
-
-
-            <span class="w3-tag w3-teal w3-round">National Recognition in High School</span>
-           
-         <ul>   <li>  Attended SA SPAR Future Warriors Conference in KZN 				(2016) </li>
-                <li>  Awarded Bursary to attend National Children's Theatre 				(2017) </li>
-                <li>  CAT Olympiad (Top 5% in SA)							(2019)</li>
-              
-                <li>  Represented SA at the Global Roundtable for Girl Guides 			(2020)</li>
-            
-                <li>  North West University Math Olympiad 1st Place					(2018)</li>
-                <li>  North West University Math Olympiad 2nd Place					(2019)</li>
-                <li> North West University IT Project 2nd Place					(2019)</li>
+        <span class="w3-tag w3-teal w3-round"><b>National Recognition in High School</b></span>
+        <ul>   
+          <li>  Attended SA SPAR Future Warriors Conference in KZN (2016)       </li>
+          <li>  Awarded Bursary to attend National Children's Theatre (2017)    </li>
+          <li>  CAT Olympiad (Top 5% in SA)	(2019)                              </li>
+          <li>  Represented SA at the Global Roundtable for Girl Guides (2020)  </li>
+          <li>  North West University Math Olympiad 1st Place	(2018)            </li>
+          <li>  North West University Math Olympiad 2nd Place (2019)            </li>
+          <li>  North West University IT Project 2nd Place	(2019)              </li>
         </ul> 
 
-                <span class="w3-tag w3-teal w3-round">Vodacom Recognition</span>
-                <ul>   <li> Attended SA SPAR Future Warriors Conference in KZN 				(2016) </li>
-                       <li> Awarded Bursary to attend National Children's Theatre 				(2017) </li>
-                       <li> Vodacom #CodeLikeAGirl 2021 winner (2021)</li>
-                       <li> Spoke at the Vodacom #CodeLikeAGirl Press Conference (2022)</li>
-                       <li> Interviewed by Vodacom's CTO for women's month (2022) </li>
-                       <li> Interviewed for the Vodacom's #DiscovHer campaign (2022) </li>
-                       <li> Featured in Vodacom's Youth Day communications as a Youth Representative (2023) </li>
-                       <li> Invited to speak at the Vodacom #CodeLikeAGirl panel (2023) </li>
-                      
-                      
-                      </ul> 
+                <span class="w3-tag w3-teal w3-round"><b>Vodacom Recognition</b></span>
+                <ul>   
+                  <li>  Attended SA SPAR Future Warriors Conference in KZN (2016)                       </li>
+                  <li>  Awarded Bursary to attend National Children's Theatre	(2017)                   </li>
+                  <li>  Vodacom #CodeLikeAGirl 2021 winner (2021)                                       </li>
+                  <li>  Spoke at the Vodacom #CodeLikeAGirl Press Conference (2022)                     </li>
+                  <li>  Interviewed by Vodacom's CTO for women's month (2022)                           </li>
+                  <li>  Interviewed for the Vodacom's #DiscovHer campaign (2022)                        </li>
+                  <li>  Featured in Vodacom's Youth Day communications as a Youth Representative Speaker (2023) </li>
+                  <li>  Invited to speak at the Vodacom #CodeLikeAGirl panel (2023)                     </li>
+                </ul> 
 
-                <span class="w3-tag w3-teal w3-round">Robotics Recognition</span>
-                <ul>     <li>  Best Robotics Core Values Inspiration Award in SA 				(2019)</li>
-                  <li>  South African National Robotics Championships					(2018, 2019)</li>
-            
-                  <li>   Selected to represent SA for Robotics in Rwanda 				(2019)</li>
-                  <li>   Represented SA for Robotics in Senegal	and placed 3rd	(2022)</li>
-                  <li>   Placed 2nd at FLL South African National Championships (2022)</li>
-                  <li>   Selected to represent SA in the Vex World Championships in Dallas, Texas, USA			(2023)</li>
-                  <li>   Qualified for FLL Asia Pacific Open World Championships in Sydney, Australia 				(2023)</li>
+                <span class="w3-tag w3-teal w3-round"><b>Robotics Recognition</b></span>
+                <ul>     
+                  <li>  Best Robotics Core Values Inspiration Award in SA (2019)                                        </li>
+                  <li>  South African National Robotics Championships	(2018, 2019)                                      </li>
+                  <li>  Selected to represent SA for Robotics in Rwanda (2019)                                          </li>
+                  <li>  Represented SA for Robotics in Senegal	and placed 3rd (2022)                                   </li>
+                  <li>  Placed 2nd at FLL Robotics South African National Championships (2022)                          </li>
+                  <li>  Selected to represent SA in the Vex Robotics World Championships in Dallas, Texas, USA (2023)   </li>
+                  <li>  Qualified for FLL Robotics Asia Pacific Open World Championships in Sydney, Australia (2023)    </li>
+                </ul>
 
-               
-                    </ul>
-
-                       <span class="w3-tag w3-teal w3-round">University Recognition</span>
+                       <span class="w3-tag w3-teal w3-round"><b>University Recognition</b></span>
                        <ul> <li>Faculty top achiever - Second place in the subject group for Computer Science and Information Systems at the NWU for Year 1 (2022)</li>
-                        <li> Golden Key International Honours Society invitation to join as a member </li>
+                        <li> Golden Key International Honours Society invitation (2023) </li>
                         <li> Inter Faculty Table Tennis (Faculty team player) - First Place (2024)</li>
-                      </ul> 
+                    </ul> 
 
 
-                      <span class="w3-tag w3-teal w3-round">University Module Marks (Year 1 & 2)</span>
+                    <span class="w3-tag w3-teal w3-round"><b>University Module Marks (Year 1 & 2)</b></span>
                        <ul> <li> Qualification code: 2DX H01 BSC (INFORMATION TECHNOLOGY)</li>
                         
                       </ul> 
                       
                       <style>
-                        table {
-                          border-collapse: collapse;
-                        }
-                        th, td {
-                          border: 1px solid white;   /*COLOURRRRRRRR*/
-                          
-                          padding: 5px 12px; /* Adjust padding as needed */
-                        }
-                        th {
-                          text-align: left;
-                        }
+                        table {border-collapse: collapse;}
+                        th, td {border: 1px solid white; padding: 5px 12px;}
+                        th {text-align: left;}
                         
-                        }
-                        table.responsive-results {
-                          border-collapse: collapse;
-                          width: 100%; /* Ensures table takes full width on all screens */
-                        }
-                        /* Media queries for responsive adjustments */
-                        @media (max-width: 768px) {  /* Adjust breakpoint as needed */
+                        table.responsive-results {border-collapse: collapse; width: 100%;}
+                        
+                        /*RESPONSIVE TABLE FOR MOBILE / SMALLER TABLES*/
+                        @media (max-width: 768px) {  /* breakpoint */
                           table.responsive-results th:last-child,  /* Hide last table header */
                           table.responsive-results td:last-child {  /* Hide last table data cell */
                             display: none;
                           }
                         }
-                        </style>
+                      </style>
                         
                         
+                      <!--TABLE OF MODULE RESULTS--> 
                         
-                        
-                        <table class="responsive-results"">
-                          <tr class = "w3-hover-teal">
+                        <table class="responsive-results">
+                          <tr class = "w3-teal">
                             <th>Code</th>
                             <th>Module Description</th>
                             <th>Result</th>
@@ -456,7 +448,6 @@ ul{
                             <td>93.0</td>
                             <td>Distinction</td>
                           </tr>
-                        
                           <tr class = "w3-hover-teal">
                             <td>ALDE 122</td>
                             <td>Academic Literacy Development - English</td>
@@ -592,57 +583,49 @@ ul{
                           </tr>
                         </table>
                       
-                        <br>        
+
+                        <br>
+                        
+                        <!--TABLE OF MODULES STILL NEED TO BE COMPLETED-->
                         <span class="w3-tag w3-teal w3-round">University Modules in the Process of Completion (By November 2024)</span> <br><br>
-                         <table> 
-                          <tr class = "w3-hover-teal">
+                        <table> 
+                          <tr class = "w3-teal">
                             <th>Code</th>
                             <th>Module Description</th>
-                          
                           </tr>
                           <tr class = "w3-hover-teal">
                             <td>CMPG 311</td>
                             <td>Databases</td>
-                          
                           </tr>
                           <tr class = "w3-hover-teal">
                             <td>CMPG 312</td>
                             <td>Decision Support Systems I</td>
-                        
                           </tr>
-                        
                           <tr class = "w3-hover-teal">
                             <td>CMPG 313</td>
                             <td>Artificial Intelligence</td>
-                        
                           </tr>
                           <tr class = "w3-hover-teal">
                             <td>CMPG 315</td>
                             <td>Computer Networks</td>
-                         
                           </tr>
                           <tr class = "w3-hover-teal">
                             <td>CMPG 321</td>
                             <td>Advanced Databases</td>
-                      
                           </tr>
                           <tr class = "w3-hover-teal">
                             <td>CMPG 322</td>
                             <td>Decision Support Systems II</td>
-                           
                           </tr>
                           <tr class = "w3-hover-teal">
                             <td>CMPG 323</td>
                             <td>IT Development</td>
-                        
                           </tr>
                           <tr class = "w3-hover-teal">
                             <td>CMPG 324</td>
                             <td>Operating Systems</td>
-                            
                           </tr>
-                         
-                      </table>
+                        </table>
 
 
 
@@ -661,29 +644,29 @@ ul{
   <!-- End Page Container -->
 </div>
 
-<script>
-  function myFunction() {
-    var x = document.getElementById("mySideBar");
-   
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else { 
-      x.className = x.className.replace(" w3-show", "");
-    } 
-    location.href='#top';
-  }
+  <script>
+    function myFunction() {
+      var x = document.getElementById("mySideBar");
+    
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      } 
+      location.href='#top';
+    }
   </script>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <br>
-   <!--   <i class="fa fa-facebook-official w3-hover-opacity"></i>-->
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <!-- <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>-->
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p>Zainaaz Hansa (2024)</p>
-</footer>
+  <footer class="w3-container w3-teal w3-center w3-margin-top">
+    <br>
+    <!--   <i class="fa fa-facebook-official w3-hover-opacity"></i>-->
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>-->
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p>Zainaaz Hansa (2024)</p>
+  </footer>
 
 </body>
 </html>
