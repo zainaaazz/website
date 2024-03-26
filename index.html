@@ -89,6 +89,8 @@
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" 
     onclick="myFunction()">&#9776;</a>
+
+    
     </a>
   </div>
 </div>
@@ -126,9 +128,11 @@
          
           <!-- PERSONAL INFO (LEFT)-->
           <h2 class="w3-text-teal"><b>Zainaaz Hansa</b></h2>
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>BSc in IT student (Final Year Student)</p>
-          <p><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-large w3-text-teal"></i>Vodacom Alumni & Bursar</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>South Africa</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>NWU BSc in IT student (Final Year)</p>
+          
+          <p><i class="fa fa-drivers-license-o fa-fw w3-margin-right w3-large w3-text-teal"></i>23-01-2004</p>
+          <p><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-large w3-text-teal"></i>Vodacom Alumni, Bursar & Ambassador </p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>North West & Gauteng, South Africa</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>zainaazhansa@gmail.com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>076 254 1846</p>
           <hr>
@@ -377,20 +381,21 @@
 
                 <span class="w3-tag w3-teal w3-round"><b>Vodacom Recognition</b></span>
                 <ul>   
-                  <li>  Attended SA SPAR Future Warriors Conference in KZN (2016)                       </li>
-                  <li>  Awarded Bursary to attend National Children's Theatre	(2017)                   </li>
+                  
                   <li>  Vodacom #CodeLikeAGirl 2021 winner (2021)                                       </li>
-                  <li>  Spoke at the Vodacom #CodeLikeAGirl Press Conference (2022)                     </li>
+                  <li>  Vodacom offered funding for my tertiary education (2021)                                       </li>
+                  <li>  Spoke at the Vodacom #CodeLikeAGirl Press Release Conference (2022)                     </li>
                   <li>  Interviewed by Vodacom's CTO for women's month (2022)                           </li>
                   <li>  Interviewed for the Vodacom's #DiscovHer campaign (2022)                        </li>
                   <li>  Featured in Vodacom's Youth Day communications as a Youth Representative Speaker (2023) </li>
                   <li>  Invited to speak at the Vodacom #CodeLikeAGirl panel (2023)                     </li>
+                  <li>  Invited as a guest to Vodacom's annual Hackathon and interviewed (2024)                     </li>
                 </ul> 
 
                 <span class="w3-tag w3-teal w3-round"><b>Robotics Recognition</b></span>
                 <ul>     
                   <li>  Best Robotics Core Values Inspiration Award in SA (2019)                                        </li>
-                  <li>  South African National Robotics Championships	(2018, 2019)                                      </li>
+                  <li>  South African National FLL Robotics Championships	(2018, 2019)                                      </li>
                   <li>  Selected to represent SA for Robotics in Rwanda (2019)                                          </li>
                   <li>  Represented SA for Robotics in Senegal	and placed 3rd (2022)                                   </li>
                   <li>  Placed 2nd at FLL Robotics South African National Championships (2022)                          </li>
@@ -587,7 +592,7 @@
                         <br>
                         
                         <!--TABLE OF MODULES STILL NEED TO BE COMPLETED-->
-                        <span class="w3-tag w3-teal w3-round">University Modules in the Process of Completion (By November 2024)</span> <br><br>
+                        <span class="w3-tag w3-teal w3-round"><b>University Modules in the Process of Completion (By November 2024)</b></span> <br><br>
                         <table> 
                           <tr class = "w3-teal">
                             <th>Code</th>
@@ -654,6 +659,13 @@
         x.className = x.className.replace(" w3-show", "");
       } 
       location.href='#top';
+      
+      const scrollUpButton = document.getElementById("scrollUpButton"); // Get the button element
+
+      scrollUpButton.addEventListener("click", function() {
+      window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top smoothly
+      });
+
     }
   </script>
 
