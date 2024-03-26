@@ -60,6 +60,10 @@
   .mySlides {display:none}
   .mySlides:first-child {display: block;} /* Show the first image initially */
   .caption {display:none}
+
+  #top-of-page {
+  display: none;
+}
 </style>
 
 <!-- THINGS TO CHANGE ON WEBSITE 
@@ -76,7 +80,7 @@
 
 <!-- DESKTOP NAVIGATION BAR -->
 
-<div class="w3-top" id="top">               <!--COLOURRRRRRRR-->
+<div class="w3-top" id="top">               
   <div class="w3-bar w3-black w3-card">
     <a href="#home" class="w3-bar-item w3-button w3-wide">ZAINAAZ HANSA</a>
     <!-- Right-sided navbar links -->
@@ -87,7 +91,7 @@
       <a href="portfolio.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Portfolio</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" 
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-smoothscroll" 
     onclick="myFunction()">&#9776;</a>
 
     
@@ -650,23 +654,19 @@
 </div>
 
   <script>
-    function myFunction() {
-      var x = document.getElementById("mySideBar");
-    
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else { 
-        x.className = x.className.replace(" w3-show", "");
-      } 
-      location.href='#top';
-      
-      const scrollUpButton = document.getElementById("mySideBar"); // Get the button element
+   function myFunction() {
+  // Toggle Menu
+  var x = document.getElementById("mySideBar");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
 
-      scrollUpButton.addEventListener("click", function() {
-      window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top smoothly
-      });
+  // Scroll to Top
+  window.scrollTo(0, 0);
 
-    }
+}
   </script>
 
   <footer class="w3-container w3-teal w3-center w3-margin-top">
