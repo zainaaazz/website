@@ -1,23 +1,27 @@
 function myFunction() {
+    //toggle Menu
     var x = document.getElementById("mySideBar");
     if (x.className.indexOf("w3-show") == -1) {
       x.className += " w3-show";
-    } else { 
+    } else {
       x.className = x.className.replace(" w3-show", "");
     }
-  }
   
+    //scroll to top
+    window.scrollTo(0, 0);  
+  }
+
   var slideIndex = 1;
   showDivs(slideIndex);
   
   function plusDivs(n) {
     showDivs(slideIndex += n);
   }
-  
+
   function currentDiv(n) {
     showDivs(slideIndex = n);
   }
-  
+
   function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("mySlides");
