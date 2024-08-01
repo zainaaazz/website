@@ -18,38 +18,42 @@
     max-width:1400px;
   }
 
-  p.round2 {
-    border: 2px solid teal;
-    border-radius: 8px;
-    padding: 5px;
-  }
+p.round2 {
+  border: 2px solid teal;
+  border-radius: 8px;
+  padding: 5px;
+ }
 
-  table.center {
-    margin-left: auto;
-    margin-right: auto;
-  }
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    width: 20%;
-  }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 20%;
+}
+  
+table {
+  width: 60%;
+}
 
-   
-  table {
-    width: 60%;
-  }
-
- img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 
-  * {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
 
 /* Style the tab */
 .tab {
@@ -93,4 +97,25 @@ body {font-family: "Lato", sans-serif;}
   width: 70%;
   border-left: none;
   height: 100%;
+}
+
+/* Responsive Table */
+@media screen and (max-width: 600px) {
+  .responsive-table tr, .responsive-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .responsive-table tr td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .responsive-table tr td:last-child {
+    border-bottom: none;
+  }
+
+  .responsive-table tr {
+    margin-bottom: 10px;
+  }
 }
