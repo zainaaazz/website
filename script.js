@@ -2,45 +2,38 @@ function myFunction() {
     //toggle Menu
     var x = document.getElementById("mySideBar");
     if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
+        x.className += " w3-show";
     } else {
-      x.className = x.className.replace(" w3-show", "");
+        x.className = x.className.replace(" w3-show", "");
     }
-  
+
     //scroll to top
-    window.scrollTo(0, 0);  
-  }
+    window.scrollTo(0, 0);
+}
 
-  var slideIndex = 1;
-  showDivs(slideIndex);
-  
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
+var slideIndex = 1;
+showSlides(slideIndex);
 
-  function currentDiv(n) {
-    showDivs(slideIndex = n);
-  }
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
-  function showDivs(n) {
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
     var i;
-    var x = document.getElementsByClassName("mySlides");
-    var captions = document.getElementsByClassName("caption"); // Get all captions
-    var dots = document.getElementsByClassName("demo");
-    if (n > x.length) {slideIndex = 1}  
-    if (n < 1) {slideIndex = x.length}
-
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
-      captions[i].style.display = "none"; // Hide all captions 
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-
     for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace("w3-teal", "");
+        dots[i].className = dots[i].className.replace(" active", "");
     }
-    
-    x[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " w3-teal";
-    captions[slideIndex-1].style.display = "block"; //corresponding caption
-
-  }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
