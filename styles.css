@@ -119,14 +119,17 @@ body {
     margin-bottom: 10px;
   }
 }
-
+/* Add this to your existing styles.css file */
 .project {
   transition: transform 0.3s, background-color 0.3s;
   margin: 0 40px;
   padding: 10px 20px;
+  border-radius: 15px; /* Added border-radius for rounded corners */
 }
 
-.project:hover {
+.project:hover,
+.project:focus,
+.project:active {
   transform: scale(1.05);
   background-color: #333;
   border-radius: 15px; /* Added border-radius for rounded corners */
@@ -152,4 +155,24 @@ body {
 .w3-tag.w3-teal.w3-round {
   font-size: 16px; /* Adjusted font size */
   padding: 5px 10px; /* Optional: Adjust padding for better appearance */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .project {
+      margin: 0 20px;
+      padding: 10px 15px;
+  }
+
+  .project-title {
+      font-size: 18px;
+  }
+
+  .project-description {
+      font-size: 14px;
+  }
+
+  .w3-tag.w3-teal.w3-round {
+      font-size: 14px;
+  }
 }
