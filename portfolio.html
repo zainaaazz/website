@@ -10,9 +10,8 @@
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 th, td {
-    border: 1px solid white;   /*COLOURRRRRRRR*/
+    border: 1px solid white;
 }
-
 
 @keyframes fadeIn {
     from {
@@ -26,23 +25,45 @@ th, td {
 .animated-cell {
     animation: fadeIn 2s ease-in-out;
 }
+
+.project {
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    background-color: #333;
+}
+
+.projects-section {
+    background-color: #111010;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    color: #00bfae;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    color: #fff;
+    font-size: 18px;
+}
 </style>
 
-</style>
-<body id="portfolioBody" style="background-color: #211F1F;"></body>
+<body id="portfolioBody" style="background-color: #211F1F;">
 
   <div class="w3-top">
     <div class="w3-bar w3-black w3-card">
       <a href="#home" class="w3-bar-item w3-button w3-wide">ZAINAAZ HANSA</a>
-      <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
         <a href="index.html" class="w3-bar-item w3-button">CV</a>
         <a href="portfolio.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Portfolio</a>
       </div>
-
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-smoothscroll" 
       onclick="myFunction()">&#9776;</a>
-
     </div>
   </div>
   
@@ -55,11 +76,44 @@ th, td {
   
   <br>
   <br>
+
+  
   
   <div class="w3-content w3-margin-top" style="max-width:1400px; margin-top: 100px;">
     <div class="w3-row-padding">
+    
+      
+
+        <div class="w3-container w3-card w3-margin-bottom" style="background-color: #111010;"> 
+          <h2 class="w3-text-teal w3-center"><b><u>PROJECTS</u></b></h2>
+        </div>
+
+        <div class="w3-container w3-card w3-margin-bottom projects-section"> 
+
+        <div class="project">
+          <h3 class="project-title">Text Messaging Application (2024)</h3>
+          <p class="project-description">Developed a Windows-based text messaging app in Python in a project team of 10. Implemented features for sending and receiving individual messages over the Internet.</p>
+        </div>
+        <div class="project">
+          <h3 class="project-title">File Encryption Application (2023)</h3>
+          <p class="project-description">Created a Python app in a project team of 4 for encrypting/decrypting various file types using DES and custom algorithm. Implemented password hashing and secure file deletion after encryption.</p>
+        </div>
+        <div class="project">
+          <h3 class="project-title">Inventory Management System (2023)</h3>
+          <p class="project-description">Built a C# application with Microsoft SQL Server database in a project team of 7. Developed features for stock management, supplier tracking, order processing, and reporting.</p>
+        </div>
+        <div class="project">
+          <h3 class="project-title">Event Management System (2023)</h3>
+          <p class="project-description">Developed a C# Windows application with SQL Server database for event organization. Implemented user registration, event hosting, and personalized dashboard functionality.</p>
+        </div>
+        <div class="project">
+          <h3 class="project-title">Railway Management System (2020)</h3>
+          <p class="project-description">Developed an information kiosk software in Delphi with MS Access database for a railway business. Created modules for ticket purchasing, schedule viewing, and route management.</p>
+        </div>
+      </div>
+
       <div class="w3-container w3-card w3-margin-bottom" style="background-color: #111010;"> 
-        <h2 class="w3-text-teal w3-center"><b><u>PORTFOLIO OF DESIGNS</u></h2>
+        <h2 class="w3-text-teal w3-center"><b><u>PORTFOLIO OF DESIGNS</u></b></h2>
       </div>
       <div class="w3-container w3-card w3-margin-bottom w3-text-white" style="background-color: #111010;">
         <br>
@@ -103,8 +157,6 @@ th, td {
       </div>
     </div>
   </div>
-  
-
 
   <script>
 function myFunction() {
@@ -119,9 +171,7 @@ function myFunction() {
     //scroll to top
     window.scrollTo(0, 0);
 }
-
   </script>
-
 
   <footer class="w3-container w3-teal w3-center w3-margin-top">
     <br>

@@ -119,3 +119,31 @@ body {
     margin-bottom: 10px;
   }
 }
+
+
+.project {
+  transition: transform 0.3s, background-color 0.3s;
+  margin: 0 40px;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  background-color: #333;
+}
+
+.projects-section {
+  background-color: #111010;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project-title {
+  color: #00bfae;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  color: #fff;
+  font-size: 18px;
+}
