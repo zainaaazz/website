@@ -5,6 +5,8 @@
   column-gap: 10px; 
 }
 
+ body { background-color: #282424; color: white; /* Add this line for white text */}
+
 .image2 {
   grid-column: 1 / 2; /* Image occupies the first column */
 }
