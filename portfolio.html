@@ -12,6 +12,22 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 th, td {
     border: 1px solid white;   /*COLOURRRRRRRR*/
 }
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-cell {
+    animation: fadeIn 2s ease-in-out;
+}
+</style>
+
 </style>
 <body id="portfolioBody" style="background-color: #211F1F;"></body>
 
@@ -39,6 +55,7 @@ th, td {
   
   <br>
   <br>
+  
   <div class="w3-content w3-margin-top" style="max-width:1400px; margin-top: 100px;">
     <div class="w3-row-padding">
       <div class="w3-container w3-card w3-margin-bottom" style="background-color: #111010;"> 
@@ -47,7 +64,7 @@ th, td {
       <div class="w3-container w3-card w3-margin-bottom w3-text-white" style="background-color: #111010;">
         <br>
         <table class="center responsive-table" cellspacing="2" cellpadding="10" border="4" style="width:90%">
-          <tr class="w3-teal">
+          <tr class="w3-teal animated-cell">
             <td colspan="3" align="center"><b>APP GUI DESIGNS (CODED FOR UNIVERSITY PROJECTS)</b></td>
           </tr>
           <tr>
@@ -65,7 +82,7 @@ th, td {
             <td><img src="GUI/form8.JPEG" style="width:100%"></td>
             <td><img src="GUI/form9.JPEG" style="width:100%"></td>
           </tr>
-          <tr class="w3-teal">
+          <tr class="w3-teal animated-cell">
             <td colspan="3" align="center"><b>LOGO DESIGNS</b></td>
           </tr>
           <tr>
@@ -73,7 +90,7 @@ th, td {
             <td><img src="portfolio/2.png" style="width:100%"></td>
             <td><img src="portfolio/3.jpeg" style="width:100%"></td>
           </tr>
-          <tr class="w3-teal">
+          <tr class="w3-teal animated-cell">
             <td colspan="3" align="center"><b>INFORGRAPHIC DESIGNS</b></td>
           </tr>
           <tr>
@@ -86,6 +103,7 @@ th, td {
       </div>
     </div>
   </div>
+  
 
 
   <script>
